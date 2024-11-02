@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 450;
+    font-style: normal;
+}
+
+.header-container {
+    display: flex;
+    border-bottom: solid 1px;
+    box-shadow: 5px 5px 20px 1px black;
+}
+
+.header-container img {
+    width: 180px;
+    height: 80px;  
+}
+
+.header-contant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    font-size: 1.5rem;
+}
+
+.header-contant a {
+    text-decoration: none;
+    color: black;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-big {
+    font-size: 42px;
+}
+
+.call-to-action {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#button-call-to-action {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    background-color: rgb(235, 81, 73);
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 20px 2px black;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+#button-call-to-action:hover {
+    background-color: rgb(213, 56, 51);
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    transition: 1s ease-out;
+}
+
+#cta-color {
+    color: rgb(232, 31, 39);
+}
+
+#cta-color-dot {
+    color: black;
+    display: inline;
+}
+
+.call-to-action button {
+    padding: 0.5em;
+    border: 1px solid;
+    border-radius: 200px;
+}
