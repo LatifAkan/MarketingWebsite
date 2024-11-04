@@ -58,6 +58,13 @@ body {
     font-size: 26px;
 }
 
+.button-call-to-action:hover {
+    background-color: rgb(213, 56, 51);
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    transition: 1s ease-out;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -74,12 +81,6 @@ p {
     font-size: 24px;
 }
 
-.button-call-to-action:hover {
-    background-color: rgb(213, 56, 51);
-    padding-left: 3.5em;
-    padding-right: 3.5em;
-    transition: 1s ease-out;
-}
 
 #cta-color {
     color: rgb(232, 31, 39);
@@ -117,6 +118,7 @@ p {
 
 .marketing-possibilities h3 {
     font-size: 23px;
+    text-wrap: nowrap;
 }
 
 .marketing-possibilities p {

@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    border-bottom: solid 1px;
+    box-shadow: 5px 5px 20px 1px black;
+}
+
+.header-container img {
+    width: 180px;
+    height: 80px;  
+}
+
+.header-contant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    font-size: 1.5rem;
+    margin-right: 180px;
+}
+
+.header-contant a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container {
+    border-bottom: solid 1px;
+    box-shadow: 5px 5px 20px 1px black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container img {
+    width: 400px;
+}
+
+h1 {
+    font-size: 43px;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.contact-form {
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    padding-left: 16em;
+    padding-right: 16em;
+    padding-top: 2em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#hr-line {
+    width: 30%;
+    height: 0.1em;
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+form {
+    width: 100%;
+}
+
+#personal-information {
+    display: grid;
+    margin-bottom: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.input-style input {
+    height: 2em;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 1em;
+}
+
+#questions {
+    display: grid;
+    grid-row-gap: 3em;
+    margin-bottom: 2em
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.submit-button button {
+    padding: 0.6em 3em 0.6em 3em;
+    background-color: rgb(240, 80, 70);
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 20px 2px black;
+    cursor: pointer;
+    transition: 1s ease;
+    border-radius: 50px;
+    font-size: 26px;
+}
+
+.submit-button button:hover {
+    background-color: rgb(213, 56, 51);
+    padding-left: 5em;
+    padding-right: 5em;
+    transition: 1s ease-out;
+}
