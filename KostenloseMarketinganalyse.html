@@ -14,64 +14,76 @@
     </head>
     <body>
 
-    <section>
+        <header class="header">
 
-        <div class="header-container">
+            <div class="logo">
+                <a href="./StartSeite.html">
+                    <img id="logo" src="./img/banner.png" alt="">
+                </a>
+            </div>
     
-            <img src="./img/banner.png" alt="">
-            <div class="header-contant">
+            <div class="menu-links">
                 <div><a href="./StartSeite.html">Startseite</a></div>
                 <div><a href="./KostenloseMarketinganalyse.html">Kostenlose Marketinganalyse</a></div>
                 <div><a href="">Blog</a></div>
             </div>
+                
+            <button class="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
     
-        </div>
+        </header>
 
-    </section>
-
-    <section>
-        <h1>Erhalten Sie eine kostenlose Marketinganalyse:</h1>
-
-        <div class="contact-form">
-            <div>
+        <main>
+            
+            <section class="text-block-1 container">
+            
+                <h1 id="header-text">Erhalten Sie eine kostenlose Marketinganalyse:</h1>
+        
+            </section>
+            
+            <section class="text-block-2 container">
+                
                 <p>Möchte Sie wissen, was wir für Sie tun können?</p>
                 <p>Füllen Sie das untenstehen Formular aus und wir werden uns innerhalb von 48 Stunden für eine kostenlose Analyse bei Ihnen melden.</p>
                 <p>Keine Kosten, keine Verpflichtungen, kein lästiges Verkaufsgespräch. Garantiert.</p>
-            </div>
+            
+            </section>
+            
+            <section class="form container">
+            
+                <form action="">
+                    <div class="input-style" id="personal-information">
+                        <input type="text" name="name" value="Name" id="name">
+                        <input type="email" name="email" value="E-Mail" id="email">
+                        <input type="text" name="company-name" value="Name der Firma" id="company">
+                        <input type="tel" name="phone-number" value="Telefonnummer" id="phone-number">
+                    </div>
+                    <div class="input-style" id="questions">
+                        <input type="text" name="question-1" value="Was ist Ihre wichtigste Frage?" id="question-1">
+                        <input type="text" name="question-2" value="Wie haben Sie uns gefunden?" id="question-2">
+                        <input type="text" name="question-3" value="Wie viel geben Sie monatlich für Werbung aus?" id="question-3">
+                        <input type="text" name="question-4" value="Was heißt Ihre Website?" id="question-4">
+                    </div>
+                    
+                    <div class="submit-button">
+                        <button type="submit">Senden</button>
+                    </div>
+                </form>
 
-            <hr id="hr-line">
-    
-            <form class="form" action="">
-                <div class="input-style" id="personal-information">
-                    <input type="text" name="name" value="Name" id="name">
-                    <input type="email" name="email" value="E-Mail" id="email">
-                    <input type="text" name="company-name" value="Name der Firma" id="company">
-                    <input type="tel" name="phone-number" value="Telefonnummer" id="phone-number">
-                </div>
-                <div class="input-style" id="questions">
-                    <input type="text" name="question-1" value="Was ist Ihre wichtigste Frage?" id="question-1">
-                    <input type="text" name="question-2" value="Wie haben Sie uns gefunden?" id="question-2">
-                    <input type="text" name="question-3" value="Wie viel geben Sie monatlich für Werbung aus?" id="question-3">
-                    <input type="text" name="question-4" value="Was heißt Ihre Website?" id="question-4">
-                </div>
-                
-                <div class="submit-button">
-                    <button type="submit">Senden</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    
-    <section>
+            </section>
 
-        <div class="footer-container">
+        </main>
+        
+        <footer class="footer">
+
             <p><a href="">Cookies + Datenschutz</a></p>
             <img src="./img/banner.png" alt="">
-        </div>
 
-    </section>
-
-
+        </footer>
     
 </body>
+
 </html>

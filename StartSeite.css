@@ -1,49 +1,64 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     font-family: 'Roboto';
     font-style: normal;
     box-sizing: border-box;
 }
 
-.header-container {
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.header {
     display: flex;
-    width: 100vw;
+    height: 5em;
     border-bottom: solid 1px;
     box-shadow: 5px 5px 20px 1px black;
 }
 
-.header-container img {
+#logo {
     width: 180px;
-    height: 80px;  
+    height: 5em;
+    position: absolute;
 }
 
-.header-contant {
-    width: 100%;
+.menu-links {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     gap: 5em;
-    margin-right: 180px;
     font-size: 1.5rem;
 }
 
-.header-contant a {
+.menu-links div {
+    height: 100%;
+}
+
+.menu-links a {
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: center;
     text-decoration: none;
     color: black;
+    height: 100%;
+    transition: .5s ease;
 }
 
-.body-container {
-    display: flex;
-    width: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.menu-links a:hover {
+    background-color: rgb(240, 80, 70);
+    color: white;
+}
+
+.call-to-action-1 {
     text-align: center;
-}
-
-.call-to-action {
     margin-top: 4em;
 }
 
@@ -92,77 +107,67 @@ p {
     display: inline;
 }
 
-.footer-container {
-    border-bottom: solid 1px;
+.footer {
+    text-align: center;
+    padding-top: 1em;
     box-shadow: 5px 5px 20px 1px black;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+}
+
+.footer img {
+    width: 300px;
+    margin-bottom: 2em;
 }
 
 .marketing-possibilities {
     display: flex; 
-    width: 70vw;
-    gap: 2em;
-    margin-bottom: 7em;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2em;
 }
 
 .space {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px
 }
 
-.margketing-possibilities-img {
+.space img {
     width: 80px;
+    margin: 0 auto;
 }
 
-.marketing-possibilities h3 {
-    height: 2.2em;
+.space h3 {
     font-size: 23px;
 }
 
-.marketing-possibilities p {
+.space p {
     font-size: 18px;
-}
-
-.footer-container img {
-    width: 400px;
 }
 
 .text-block-1 {
     margin-top: 8em;
     margin-bottom: 8em;
+    text-align: center;
 }
 
 .text-block-2 {
     margin-top: 5em;
     margin-bottom: 3em;
-    line-height: 0.5;
-    text-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-    line-height: 1.2;
+    text-align: center;
 }
 
 .text-block-3 {
-    padding: 1em;
-    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3em;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    width: 26.25em;
-    height: 21.875em;
-    margin: 0 auto;
     border: 1px solid black;
     padding: 3em;
-    border: 1px solid black;
     box-shadow: 0 0 10px 2px black;
-    transition: 2s ease;
 }
 
 .box:hover {
@@ -178,35 +183,116 @@ p {
     margin: 0 auto;
 }
 
-.footer-contact-container {
-    width: 100vw;
+.call-to-action-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     height: 300px;
     margin-top: 5em;
     margin-bottom: 5em;
 } 
 
-.footer-contact-container h1 {
-    width: 50%;
-    margin: 0 auto;
-    text-wrap: wrap;
+.call-to-action-2 h1 {
     margin-bottom: 1em;
-    line-height: 1.2;
 }
 
-.footer-contact-container button {
+.call-to-action-2 button {
     margin-top: 1em;
 }
 
-.website-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+.menu-button {
+    display: none;
+    color: black;
+    width: 4em;
+    border: none;
+    background-color: transparent;
 }
 
-@media (max-width: 68.75em) {
+/* RESPONSIVE
+
+/* 2x extra large screens */
+	@media (max-width: 1536px) {  
+    .container {
+		    max-width: 1280px;
+	}
+}
+
+/* extra large screens */
+	@media (max-width: 1280px) {  
+    .container {
+		    max-width: 1024px;
+	}
+    .menu-links {
+        gap: 2.5em;
+    }
+}
+
+/* large screens */
+	@media (max-width: 1024px) {  
+    .container {
+		    max-width: 768px;
+	}	
+    .menu-links {
+        font-size: 1.3rem;
+        gap: 1em;
+    }
+    #logo {
+        width: 150px;
+    }
+}
+
+/* medium screens */
+	@media (max-width: 768px) {  
+	.container {
+		    max-width: 640px;
+	}	
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .marketing-possibilities {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-links a {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+/* small screens */
+	@media (max-width: 640px) {
+	.container {
+		    max-width: 475px;
+	}
+}
+
+/* extra small screens */
+	@media (max-width: 475px) {  
+	.container {
+		    width: 100%;
+	}
+    .space h3 p{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #logo {
+        width: 120px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 68.75em) {
 
     .marketing-possibilities {
         display: flex;
@@ -230,16 +316,12 @@ p {
         flex-direction: column;
     }
 
-    .header-contant {
+    .menu-links {
         text-align: center;
     }
 
     .marketing-possibilities h3 {
         height: 1.2em;
-    }
-
-    .box {
-        padding: 0.8em;
     }
 
     .footer-contact-container h1 {
@@ -250,11 +332,11 @@ p {
 
 @media (max-width: 58.125em) {
 
-    .header-contant {
+    .menu-links {
         margin-right: 0;
     }
 
-    .header-contant a {
+    .menu-links a {
         display: none;
     }
 
@@ -272,9 +354,18 @@ p {
         background-color: black;
     }
 
-    @media (max-width: 31.875em) {
-        .box {
-            width: 20em;
-        }
+    .box {
+        width: 15em;
+        height: 15em;
     }
-}
+
+    .box h3 p { 
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .website-container {
+        background-color: red;
+    }
+
+} */
